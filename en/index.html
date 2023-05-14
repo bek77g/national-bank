@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="../src/libs/owlcarousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../src/libs/owlcarousel/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="../src/libs/jquery/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../src/libs/wowjs/animate.min.css" />
+    <title>nationalBank</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__nav">
+          <a href="./index.html" class="header__logo">
+            <img src="../src/images/header/running-man.png" alt="running-man" />
+          </a>
+          <div class="header__title">
+            <span class="header__title-repres">National Bank</span>
+            <p class="header__title-represers">Kyrgyz Republic</p>
+          </div>
+          <div class="header__side">
+            <div class="header__contact">
+              <span class="header__contact-callback">+996 (312) 61-04-86</span>
+              <button class="header__btn">Request a call</button>
+            </div>
+            <select name="" class="btn" id="">
+              <option
+                value="ru"
+                onclick="document.location = document.location.origin + '/index.html'"
+              >
+                RU
+              </option>
+              <option
+                value="kg"
+                onclick="document.location = document.location.origin + '/kg/index.html'"
+              >
+                KG
+              </option>
+              <option
+                value="en"
+                onclick="document.location = document.location.origin + '/en/index.html'"
+                selected
+              >
+                EN
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="home__content">
+            <div class="home__main">
+              <h1 class="home__title">
+                National Bank <br />
+                Kyrgyz Republic
+              </h1>
+              <p class="home__subtitle">- 30 years</p>
+            </div>
+            <div class="home__menu">
+              <div class="home__icon">
+                <img
+                  class="home__img"
+                  src="../src/images/home/time.svg"
+                  alt="time"
+                />
+                <p class="home__img-text">
+                  Waiting time: <br />
+                  10 minutes
+                </p>
+              </div>
+              <div class="home__icon">
+                <img
+                  class="home__img"
+                  src="../src/images/home/send.svg"
+                  alt="send"
+                />
+                <p class="home__img-text">
+                  Free <br />
+                  content
+                </p>
+              </div>
+              <div class="home__icon">
+                <img
+                  class="home__img"
+                  src="../src/images/home/answer.svg"
+                  alt="answer"
+                />
+                <p class="home__img-text">
+                  We answer <br />
+                  For all questions
+                </p>
+              </div>
+            </div>
+            <a href="./pages/more.html" class="home__btn">More interesting</a>
+            <!-- <p class="home__bottombtn">или <a href="#catalog" class="home__bottombtn part">ПЕРЕЙТИ В КАТАЛОГ</a></p> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages__title">
+            The goals, objectives and functions of the National Bank
+          </h2>
+          <div class="row">
+            <div class="col-12 col-md-4 col-sm-6 advantages__cards">
+              <img
+                src="../src/images/advantages/cup.svg"
+                alt="cup"
+                class="advantages__imgs"
+              />
+              <h3 class="advantages__cards-titles">Main</h3>
+              <p class="advantages__cards-subtitles">
+                The main goal of the National Bank of the Kyrgyz Republics are
+                the achievement and maintenance of price stability, by
+                conducting the appropriate monetary politicians.
+              </p>
+            </div>
+            <div class="col-12 col-md-4 col-sm-6 advantages__cards">
+              <img
+                src="../src/images/advantages/cup.svg"
+                alt="cup"
+                class="advantages__imgs"
+              />
+              <h3 class="advantages__cards-titles">The main one</h3>
+              <p class="advantages__cards-subtitles">
+                The main task that contributes to the achievement of the goal of
+                activity bank is to maintain purchasing power national currency,
+                ensuring security and reliability banking and payment systems of
+                the republic.
+              </p>
+            </div>
+            <div class="col-12 col-md-4 col-sm-6 advantages__cards">
+              <img
+                src="../src/images/advantages/cup.svg"
+                alt="cup"
+                class="advantages__imgs"
+              />
+              <h3 class="advantages__cards-titles">Tasks</h3>
+              <p class="advantages__cards-subtitles">
+                To complete the tasks, the National Bank of the Kyrgyz Republics
+                independently organize and carry out its activities regardless
+                of state authorities and management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consalt">
+        <div class="container">
+          <h2 class="consalt__title">Sign up online for reception</h2>
+          <p class="consalt__subtitle">
+            Just fill out the application form <br />
+            And we will call you back within 10 minutes
+          </p>
+          <form class="consalt__form" action="">
+            <label class="consalt__form-input" for="">
+              <input
+                class="consalt__form-inner"
+                type="text"
+                placeholder="Ваше имя"
+              />
+            </label>
+            <label class="consalt__form-input" for="">
+              <input
+                class="consalt__form-inner"
+                id="tel"
+                name="phone"
+                type="tel"
+                placeholder="Ваш телефон"
+              />
+            </label>
+            <label class="consalt__form-input" for="">
+              <input
+                class="consalt__form-inner"
+                type="email"
+                placeholder="Ваш E-mail"
+              />
+            </label>
+            <button class="consalt__form-btn">Sign up</button>
+          </form>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="container">
+          <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <img
+                    class="slider__img"
+                    src="../src/images/slider/clock.png"
+                    alt=""
+                  />
+                </div>
+                <div class="owl-item">
+                  <img
+                    class="slider__img"
+                    src="../src/images/slider/clock2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="owl-item">
+                  <img
+                    class="slider__img"
+                    src="../src/images/slider/clock3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav">
+              <div class="owl-prev"></div>
+              <div class="owl-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="container">
+          <h2 class="review__title">Customer reviews</h2>
+          <div class="review__comment">
+            <img
+              class="review__user-logo"
+              src="../src/images/comments/irina.png"
+              alt="Ирина Иванченко"
+            />
+            <div class="review__maincomm">
+              <p class="review__name">Irina Ivanchenko</p>
+              <p class="review__marathon">2 полумарафона</p>
+              <p class="review__text">
+                For several years now I have been a client of the National Bank
+                and very Satisfied with the quality of service.All bank
+                employees are polite and Professional, help solve any issues.I
+                especially want note the convenience of Internet banking and
+                mobile applications, which allow me to promptly manage my
+                finances.
+              </p>
+            </div>
+          </div>
+          <div class="review__comment">
+            <img
+              class="review__user-logo"
+              src="../src/images/comments/ivan.png"
+              alt="Иван Сёмочкин"
+            />
+            <div class="review__maincomm">
+              <p class="review__name">Ivan Simochkin</p>
+              <p class="review__marathon">1 half -maraque</p>
+              <p class="review__text">
+                I opened a deposit for a long time at the National Bank and
+                received Very favorable conditions.In addition, I really liked
+                customer feedback system - bank managers always ready to answer
+                any questions and help with the choice of the most suitable
+                product.
+              </p>
+            </div>
+          </div>
+          <div class="review__comment">
+            <img
+              class="review__user-logo"
+              src="../src/images/comments/yulia.png"
+              alt="Юлия Дашкинa"
+            />
+            <div class="review__maincomm">
+              <p class="review__name">Yulia Dashkina</p>
+              <p class="review__marathon">2 half -maraque</p>
+              <p class="review__text">
+                I turned to the National Bank for a loan for the purchase of
+                housing and I was very pleased with the conditions - a low
+                percentage, flexible terms repayment and the possibility of
+                early repayment without fines. I want to express special thanks
+                to the manager who helped me Fill out an application and receive
+                a loan as soon as possible.
+                <br />
+                <br />
+                Thank you!!!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__blank">
+        <p class="footer__address">
+          720001, Kyrgyz Republic, Kyrgyz Republic, GKISHKK, PRChui, 168
+        </p>
+        <p class="footer__tel">+996 (312) 66-90-11</p>
+        <div class="footer__socs">
+          <img src="../src/images/footer/1@1X.png" alt="" />
+          <img src="../src/images/footer/2@1X.png" alt="" />
+          <img src="../src/images/footer/3@1X.png" alt="" />
+        </div>
+      </div>
+      <div id="map" style="width: 100%; height: 631px"></div>
+    </footer>
+
+    <a class="gotop" href="#header">up</a>
+
+    <div class="overlay">
+      <div class="overlay__uppage"></div>
+      <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Just fill out the application form</div>
+        <div class="modal__desc modal__descr">
+          And we will call you back within 10 minutes
+        </div>
+        <form class="modal__form modal__form-mt25" action="#">
+          <input name="name" type="text" placeholder="Your name" />
+          <input name="phone" type="tel" id="tel" placeholder="Your phone" />
+          <input name="email" type="email" placeholder="Your email" />
+          <button class="modal__btn home__btn">Order a consultation</button>
+        </form>
+      </div>
+      <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Ваш заказ:</div>
+        <div class="modal__descr order-sub">Пульсометр Polar FT1</div>
+        <form class="modal__form modal__form-mt25" action="#">
+          <input name="name" type="text" placeholder="Ваше имя" />
+          <input name="phone" type="tel" id="telIN" placeholder="Ваш телефон" />
+          <input name="email" type="email" placeholder="Ваш E-mail" />
+          <button class="modal__btn order__btn">Купить</button>
+        </form>
+      </div>
+      <div class="modal modal__mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Thanks for your application!</div>
+        <div class="modal__descr modal__desc">
+          Our manager will contact you soon!
+        </div>
+      </div>
+      <div class="modal modal__mini" id="orderthank">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Thank you, your order is accepted</div>
+        <div class="modal__desc">
+          Your order is accepted by the operator.We will contact you when the
+          order will be Ready to send.A message about the order confirmation was
+          sent to left e-mail
+        </div>
+      </div>
+    </div>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full&lazy=true"></script>
+    <script src="../src/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../src/libs/inputmask/jquery.inputmask.js"></script>
+    <script src="../src/libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../src/libs/jquery/jquery.fancybox.min.js"></script>
+    <script src="../src/libs/wowjs/wow.min.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+    <script src="../src/js/main.js"></script>
+  </body>
+</html>

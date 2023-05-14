@@ -1,0 +1,31 @@
+.advantages {
+  font-family: "Museo Sans Cyrl 700";
+  padding: 75px 0 95px;
+  background: #f6f6f6 top left/100% 100% no-repeat;
+  &__title {
+    @include text($Museo700, 30px, #0d0d0d);
+    line-height: 26px;
+    text-align: center;
+    font-weight: normal;
+  }
+  &__cards {
+    margin-top: 65px;
+    text-align: center;
+    color: #0d0d0d;
+    &-titles {
+      margin: 38px 0 26px;
+      font-weight: normal;
+    }
+    &-subtitles {
+      @include text($Museo300, 14px, #0d0d0d);
+      width: 80%;
+      margin: 0 auto;
+      font-weight: bold;
+      &:last-child .part {
+        color: #cb231d;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(../fonts/Museo/stylesheet.css);
+@import "../libs/bs/bootstrap-grid.min.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 940px;
+}
+
+$Museo700: "Museo Sans Cyrl 700", sans-serif;
+$Museo500: "Museo Sans Cyrl 500", sans-serif;
+$Museo300: "Museo Sans Cyrl 300", sans-serif;
+$Montserrat: "Montserrat", sans-serif;
+$red: "#C70101";
+
+.gotop {
+  width: 100px;
+  height: 25px;
+  background-color: #c70101;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $Museo500;
+  position: fixed;
+  display: none;
+  text-align: center;
+  justify-content: center;
+  line-height: 25px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  bottom: 100px;
+  right: 10px;
+  z-index: 10;
+}
+
+@mixin text($ff, $fs, $cr) {
+  font-family: $ff;
+  font-size: $fs;
+  color: $cr;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+
+@import "header";
+@import "home";
+@import "advantages";
+@import "consalt";
+@import "slider";
+@import "catalog";
+@import "comments";
+@import "map";
+@import "media";
+@import "overlay";

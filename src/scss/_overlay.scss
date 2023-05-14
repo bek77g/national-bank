@@ -1,0 +1,90 @@
+.overlay {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.527);
+  z-index: 10;
+  &__uppage {
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  max-height: 400px;
+  background-color: #f2f2f2;
+  padding: 38px 40px 40px 40px;
+  border-radius: 3px;
+  z-index: 13;
+  &__subtitle {
+    @include text($Museo700, 18px, #0d0d0d);
+    text-align: center;
+  }
+  &__descr,
+  &__desc {
+    @include text($Museo500, 14px, #0d0d0d);
+    text-align: center;
+  }
+  &__form {
+    margin-top: 30px;
+  }
+  &__form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4b4b4b;
+  }
+  &__btn {
+    @include text($Museo500, 14px, #fff);
+    text-transform: uppercase;
+    background-color: #c70101;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s;
+    &:hover {
+      background: #e92121;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 41px;
+    line-height: 21px;
+    color: #c70101;
+    cursor: pointer;
+  }
+}
+#consultation {
+  display: none;
+}
+#order {
+  display: none;
+}
+#thanks {
+  display: none;
+}
+#orderthank {
+  display: none;
+}

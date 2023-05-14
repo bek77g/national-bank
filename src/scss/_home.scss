@@ -1,0 +1,86 @@
+.home {
+  padding: 21px 0 0;
+  background: url(../images/home/bg.png) top center/100% 100% no-repeat;
+  background-size: cover;
+  &__content {
+    padding: 166px 0 77px;
+    font-family: "Museo Sans Cyrl 500";
+    text-align: right;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
+  }
+  &__title {
+    @include text($Museo500, 42px, #fff);
+    font-weight: normal;
+    line-height: 36px;
+  }
+  &__subtitle {
+    @include text($Museo500, 24px, #fff);
+    margin-top: 16px;
+  }
+  &__menu {
+    margin-top: 65px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%;
+  }
+  &__icon {
+    margin-right: 3%;
+    text-align: center;
+  }
+  &__icon:last-child {
+    margin-right: 0;
+  }
+  &__img {
+    margin-bottom: 15px;
+  }
+  &__img-text {
+    @include text($Museo500, 14px, #fff);
+  }
+  &__icon {
+    margin-right: 70px;
+    margin-bottom: 66px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__btn {
+    @include text($Museo500, 16px, #fff);
+    width: 301px;
+    height: 51px;
+    line-height: 51px;
+    background-color: #c70101;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    &:active {
+      transform: scale(0.99);
+    }
+    &:hover {
+      background: #e92121;
+    }
+  }
+  &__bottombtn {
+    @include text($Museo500, 16px, #fff);
+    line-height: 17px;
+    margin-top: 18px;
+    text-transform: lowercase;
+  }
+  &__bottombtn .part {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: #c70101;
+    }
+  }
+}

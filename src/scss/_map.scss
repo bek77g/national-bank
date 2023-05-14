@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  &__blank {
+    max-width: 461px;
+    position: absolute;
+    padding: 51px 0 59px;
+    text-align: center;
+    z-index: 1;
+    background-color: #c70101;
+  }
+  &__address {
+    @include text($Museo500, 20px, #fff);
+    margin-bottom: 36px;
+  }
+  &__tel {
+    @include text($Museo700, 20px, #fff);
+    margin-bottom: 37px;
+  }
+  &__socs {
+    width: 212px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}

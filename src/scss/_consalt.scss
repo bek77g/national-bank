@@ -1,0 +1,55 @@
+.consalt {
+  padding: 100px 0 92px;
+  background: url(../images/consalt/bg2.png) no-repeat;
+  background-size: cover;
+  &__title {
+    @include text($Museo700, 36px, #fff);
+  }
+  &__subtitle {
+    @include text($Museo500, 20px, #fff);
+    margin: 80px 0 35px;
+  }
+  &__form {
+    width: 300px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    &-input {
+      width: 100%;
+      height: 50px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 14px;
+      &:last-child {
+        margin-bottom: 19px;
+      }
+    }
+    &-inner {
+      @include text($Museo300, 14px, black);
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 100%;
+      padding-left: 19px;
+    }
+    &-btn {
+      @include text($Museo500, 16px, #fff);
+      text-align: center;
+      width: 301px;
+      height: 56px;
+      margin-top: 19px;
+      background: #c70101;
+      text-transform: uppercase;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background: #e92121;
+      }
+    }
+  }
+}
