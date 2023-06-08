@@ -30,21 +30,26 @@
               <span class="header__contact-callback">+996 (312) 61-04-86</span>
               <button class="header__btn">заказать звонок</button>
             </div>
-            <select name="" class="btn" id="">
+            <select name="" class="btn" id="" onchange="changeLanguage(this.value)">
               <option value="ru" selected>RU</option>
-              <option
-                value="kg"
-                onclick="window.open('../kg/pages/more.html','_self')"
-              >
-                KG
-              </option>
-              <option
-                value="en"
-                onclick="window.open('../en/pages/more.html','_self')"
-              >
-                EN
-              </option>
+              <option value="kg">KG</option>
+              <option value="en">EN</option>
             </select>
+            <script>
+              function changeLanguage(value) {
+                switch (value) {
+                  case 'kg':
+                    window.open('../kg/pages/more.html', '_self');
+                    break;
+                  case 'en':
+                    window.open('../en/pages/more.html', '_self');
+                    break;
+                  default:
+                    // По умолчанию не нужно выполнять действий
+                    break;
+                }
+              }
+            </script>
           </div>
         </div>
       </div>
